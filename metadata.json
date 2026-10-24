@@ -1,0 +1,6 @@
+{
+  "name": "SpreadTruth",
+  "description": "MCX gold futures price file analyzer and spread truth verification engine by Team Quiet Edge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

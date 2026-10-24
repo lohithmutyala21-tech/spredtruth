@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #1F2A44;
+  --color-navy-light: #2d3b5e;
+  --color-navy-dark: #141b2c;
+  --color-gold: #C98A1B;
+  --color-gold-light: #e09f2b;
+  --color-gold-muted: #fef7eb;
+  --color-gold-border: #f1cf8e;
+  --color-gold-dark: #996711;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+/* Tabular figures for all financial & numerical data */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media print {
+  header, footer, nav, button {
+    display: none !important;
+  }
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  .fixed.inset-0 {
+    position: static !important;
+    background: none !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+  .shadow-2xl, .shadow-md, .shadow-sm {
+    box-shadow: none !important;
+  }
+}
